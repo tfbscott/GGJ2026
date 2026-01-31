@@ -2,10 +2,12 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Animator))]
 public class Character_Controller : MonoBehaviour
 {
     private PlayerInputActions playerControls;
     private Rigidbody2D rb;
+    private Animator animator;
 
     public float MovementSpeed = 5;
 
@@ -13,6 +15,8 @@ public class Character_Controller : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         playerControls = new PlayerInputActions();
+
+        animator = GetComponent<Animator>();
     }
 
     private void OnEnable() {
@@ -28,8 +32,11 @@ public class Character_Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 movement = playerControls.Player.Move.ReadValue<Vector2>() * MovementSpeed;
-        rb.linearVelocity = movement;
+        Vector2 move = playerControls.Player.Move.ReadValue<Vector2>();
+
+        animator.SetBool("Walking", move.magnitude > 0.01f);
+
+        rb.linearVelocity = move * MovementSpeed;
     }
 
     private void OnDisable() {
