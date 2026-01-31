@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6191994872569745640}
   - component: {fileID: 6302125857994791757}
+  - component: {fileID: 117306324399772076}
   m_Layer: 0
   m_Name: ButtonParent
   m_TagString: Untagged
@@ -62,6 +63,18 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!225 &117306324399772076
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286774994382407172}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &2414733568445648621
 GameObject:
   m_ObjectHideFlags: 0
@@ -122,3 +135,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UI.NPCDialogueUI
   _buttonParent: {fileID: 6191994872569745640}
   _buttonPrefab: {fileID: 6299197288550589539, guid: 63f74fcc607704f4a8907cb17efcd8d1, type: 3}
+  _playerData: {fileID: 0}
