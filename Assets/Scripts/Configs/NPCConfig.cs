@@ -8,6 +8,7 @@ namespace Configs
     {
         [SerializeField] 
         private DialogueConfig _dialogueConfig;
+        public DialogueConfig DialogueConfig => _dialogueConfig;
 
         [SerializeField] 
         private ArtConfig _artConfig;

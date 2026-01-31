@@ -21,5 +21,6 @@ namespace Configs
 
         [SerializeField] 
         private List<DialogueChoice> _dialogueChoices;
+        public List<DialogueChoice> DialogueChoices => _dialogueChoices;
     }
 }
