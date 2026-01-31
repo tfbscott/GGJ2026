@@ -17,7 +17,23 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 90706b4d0b249ec409a58bbdc86fcf53, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 81592315904
+    m_Localized: I like french bread
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1336230277120
+    m_Localized: Do you like French Bread
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1415645229056
+    m_Localized: Do you like Coffee
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1436100849664
+    m_Localized: Do you like Cheese
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
