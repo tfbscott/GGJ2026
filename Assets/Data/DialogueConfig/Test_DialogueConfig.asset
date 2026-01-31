@@ -12,8 +12,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac7857a1c40d4395ba737042cb0ebdac, type: 3}
   m_Name: Test_DialogueConfig
   m_EditorClassIdentifier: Assembly-CSharp::Configs.DialogueConfig
-  _gossipDialogues: []
-  _dialogueChoices: []
+  _gossipDialogues:
+  - m_TableReference:
+      m_TableCollectionName: GUID:90706b4d0b249ec409a58bbdc86fcf53
+    m_TableEntryReference:
+      m_KeyId: 81592315904
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _dialogueChoices:
+  - Dialogue:
+      m_TableReference:
+        m_TableCollectionName: GUID:90706b4d0b249ec409a58bbdc86fcf53
+      m_TableEntryReference:
+        m_KeyId: 1336230277120
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    StatusChange: 10
+    SuspicionChange: 0
+  - Dialogue:
+      m_TableReference:
+        m_TableCollectionName: GUID:90706b4d0b249ec409a58bbdc86fcf53
+      m_TableEntryReference:
+        m_KeyId: 1415645229056
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    StatusChange: 0
+    SuspicionChange: 10
+  - Dialogue:
+      m_TableReference:
+        m_TableCollectionName: GUID:90706b4d0b249ec409a58bbdc86fcf53
+      m_TableEntryReference:
+        m_KeyId: 1436100849664
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    StatusChange: 0
+    SuspicionChange: 0
   references:
     version: 2
     RefIds: []

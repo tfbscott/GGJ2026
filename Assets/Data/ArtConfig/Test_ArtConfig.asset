@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3eafb4ff530945e5860e3879729b1584, type: 3}
   m_Name: Test_ArtConfig
   m_EditorClassIdentifier: Assembly-CSharp::Configs.ArtConfig
-  _idleSprite: {fileID: 0}
+  _idleSprite: {fileID: -4987145792943726893, guid: 8f5d04c62001ee448ba06311403767fe, type: 3}
