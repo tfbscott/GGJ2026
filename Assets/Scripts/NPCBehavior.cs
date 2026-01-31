@@ -31,7 +31,6 @@ public class NPCBehavior : MonoBehaviour
     
     public void DisplayDialogueInterface()
     {
-        _dialogueUI.gameObject.SetActive(true);
         _dialogueUI.Initialize(_config.DialogueConfig);
     }
 
