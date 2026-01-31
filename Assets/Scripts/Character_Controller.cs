@@ -7,6 +7,8 @@ public class Character_Controller : MonoBehaviour
     private PlayerInputActions playerControls;
     private Rigidbody2D rb;
 
+    public float MovementSpeed = 5;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -26,7 +28,7 @@ public class Character_Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 movement = playerControls.Player.Move.ReadValue<Vector2>();
+        Vector2 movement = playerControls.Player.Move.ReadValue<Vector2>() * MovementSpeed;
         rb.linearVelocity = movement;
     }
 
