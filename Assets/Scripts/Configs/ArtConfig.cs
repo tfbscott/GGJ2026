@@ -7,5 +7,6 @@ namespace Configs
     {
         [SerializeField] 
         private Sprite _idleSprite;
+        public Sprite IdleSprite => _idleSprite;
     }
 }
