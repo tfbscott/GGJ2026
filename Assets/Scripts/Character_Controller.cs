@@ -32,7 +32,18 @@ public class Character_Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+        
         Vector2 move = playerControls.Player.Move.ReadValue<Vector2>();
+        //flips sprite
+        if (move.x < 0)
+        {
+            transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else
+        {
+            transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = false;
+        }
 
         animator.SetBool("Walking", move.magnitude > 0.01f);
 
