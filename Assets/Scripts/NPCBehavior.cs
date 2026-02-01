@@ -34,11 +34,16 @@ public class NPCBehavior : MonoBehaviour
         _dialogueUI.Initialize(_config.DialogueConfig);
     }
 
+    public void CloseDialogueInterface()
+    {
+        _dialogueUI.CloseUI();
+    }
+
     private IEnumerator DebugTest()
     {
         yield return new WaitForSeconds(1.5f);
-        DisplayGossip();
-        yield return new WaitForSeconds(1.5f);
-        DisplayDialogueInterface();
+       // DisplayGossip();
+       // yield return new WaitForSeconds(1.5f);
+       // DisplayDialogueInterface();
     }
 }
