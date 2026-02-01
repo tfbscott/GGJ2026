@@ -14,6 +14,7 @@ public class S_Interact : MonoBehaviour
     [Tooltip("The interactable object to appear")]
     public GameObject button;
     public NPCBehavior npcBehavior;
+    public Transform npcSprite;
     private GameObject player; //store player gameobject data
     private PlayerInputActions inputActions;
 
@@ -55,13 +56,13 @@ public class S_Interact : MonoBehaviour
         if(player.transform.position.x <= npcBehavior.transform.position.x)
         {
             //NPC flips left
-            npcBehavior.transform.rotation = Quaternion.Euler(0, -180, 0);
+            npcSprite.rotation = Quaternion.Euler(0, -180, 0);
         }
         //if player is to the right of the NPC
         if(player.transform.position.x > npcBehavior.transform.position.x)
         {
             //NPC flips right
-            npcBehavior.transform.rotation = Quaternion.Euler(0, 0, 0);
+            npcSprite.rotation = Quaternion.Euler(0, 0, 0);
         }
     }
     
@@ -86,7 +87,7 @@ public class S_Interact : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         //if player triggers gameobject & has enough reputation
-        if(collision.gameObject.tag == "Player")
+        if(collision.gameObject.tag == "Player" && !npcBehavior.HasBeenTalkedTo)
         {
             button.SetActive(true);
             canInteract = true;
@@ -103,6 +104,7 @@ public class S_Interact : MonoBehaviour
         {
             button.SetActive(false);
             canInteract = false;
+            npcBehavior.CloseDialogueInterface();
         }
     }
 }

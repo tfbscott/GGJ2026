@@ -9,6 +9,7 @@ public class NPCBehavior : MonoBehaviour
 {
     [SerializeField] 
     private NPCConfig _config;
+    public NPCConfig Config => _config;
 
     [SerializeField] 
     private SpriteRenderer _renderer;
@@ -33,13 +34,17 @@ public class NPCBehavior : MonoBehaviour
     
     public void DisplayDialogueInterface()
     {
-        _dialogueUI.Initialize(_config.DialogueConfig);
-        _hasBeenTalkedTo = true;
+        _dialogueUI.Initialize(this);
     }
 
     public void CloseDialogueInterface()
     {
         _dialogueUI.CloseUI();
+    }
+
+    public void FinishTalkingTo()
+    {
+        _hasBeenTalkedTo = true;
     }
 
     public int GetRep()

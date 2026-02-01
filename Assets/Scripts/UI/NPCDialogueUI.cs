@@ -21,7 +21,7 @@ namespace UI
 
         private readonly List<DialogueOptionButtonUI> _currentOptions = new List<DialogueOptionButtonUI>();
 
-        public void Initialize(DialogueConfig config)
+        public void Initialize(NPCBehavior npc)
         {
             //If we are currently active, do nothing
             if (_isActive)
@@ -38,12 +38,13 @@ namespace UI
             
             gameObject.SetActive(true);
             _isActive = true;
-            foreach (var dialogueChoice in config.DialogueChoices)
+            foreach (var dialogueChoice in npc.Config.DialogueConfig.DialogueChoices)
             {
                 var button = Instantiate(_buttonPrefab, _buttonParent);
                 _currentOptions.Add(button);
                 button.Initialize(dialogueChoice, _playerData);
                 button.OnSelect += CloseUI;
+                button.OnSelect += npc.FinishTalkingTo;
             }
         }
 
