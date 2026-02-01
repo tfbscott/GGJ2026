@@ -2,39 +2,52 @@ using UnityEngine;
 
 public class NPCMovement : MonoBehaviour
 {
-    public enum Direction { None, Up, Right, Down, Left }
-    private enum Axis { X, Y };
+
+    private Rigidbody2D rb;
 
     public float speed = 2f;
     public float minTimeUntilChangeDir = 2.0f;
     public float maxTimeUntilChangeDir = 5.0f;
+    public float minWaitAfterCollision = 1.0f;
+    public float maxWaitAfterCollision = 2.0f;
 
-    private (Direction, Direction) dir = (Direction.None, Direction.None);
+    private Vector2 direction;
 
     private float timeUntilChangeDir = 0;
     private float timer = 0;
 
-    private Rigidbody2D rb;
+    private bool isMoving = true;
+    private bool collided = false;
+    private float waitAfterCollision = 0;
+    private float collisionTimer = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         timeUntilChangeDir = UnityEngine.Random.Range(minTimeUntilChangeDir, maxTimeUntilChangeDir);
-        dir = ((Direction)UnityEngine.Random.Range(0, 5), (Direction)UnityEngine.Random.Range(0, 5));
+        direction = UnityEngine.Random.insideUnitCircle;
     }
 
     // Update is called once per frame
     void Update()
     {
-        CheckTimeUntilChangeDirValues();
-        ChangeDirection();
+        if (IsColliding()) return;
+
+        if (isMoving)
+        {
+            CheckTimeUntilChangeDirValues();
+            ChangeDirection();
+        }
     }
 
     void FixedUpdate()
     {
-        Move(dir.Item1, Axis.X);
-        Move(dir.Item2, Axis.Y);
+        if (isMoving)
+        {
+            Move();
+        }
+        else rb.linearVelocity = Vector2.zero;
     }
 
     void CheckTimeUntilChangeDirValues()
@@ -51,38 +64,61 @@ public class NPCMovement : MonoBehaviour
         if (timer >= timeUntilChangeDir)
         {
             timeUntilChangeDir = UnityEngine.Random.Range(minTimeUntilChangeDir, maxTimeUntilChangeDir);
-            dir = ((Direction)UnityEngine.Random.Range(0, 5), (Direction)UnityEngine.Random.Range(0, 5));
+            direction = UnityEngine.Random.insideUnitCircle;
             timer = 0;
         }
         else timer += Time.deltaTime;
     }
 
-    void Move(Direction dir, Axis axis)
+    void Move()
     {
-        Vector2 moveDir = Vector2.zero;
-        switch (dir)
-        {
-            case Direction.Up:
-                moveDir = Vector2.up;
-                break;
-            case Direction.Right:
-                moveDir = Vector2.right;
-                break;
-            case Direction.Down:
-                moveDir = Vector2.down;
-                break;
-            case Direction.Left:
-                moveDir = Vector2.left;
-                break;
-            default: break;
-        }
-        moveDir = moveDir.normalized;
-        Vector2 targetVel = moveDir * speed;
+        if (direction != Vector2.zero) direction = direction.normalized;
+        Vector2 targetVel = direction * speed;
+        rb.linearVelocity = new Vector2(targetVel.x, targetVel.y);
+    }
 
-        if(axis == Axis.X)
+    private bool IsColliding()
+    {
+        if (collided == true)
         {
-            rb.linearVelocity = new Vector2(targetVel.x, rb.linearVelocity.y);
+            if (collisionTimer >= waitAfterCollision)
+            {
+                collided = false;
+                timeUntilChangeDir = UnityEngine.Random.Range(minTimeUntilChangeDir, maxTimeUntilChangeDir);
+                timer = 0;
+                ReverseDirection();
+                StartMoving();
+                return false;
+            }
+            else collisionTimer += Time.deltaTime;
+            return true;
         }
-        else rb.linearVelocity = new Vector2(rb.linearVelocity.x, targetVel.y);
+        else return false;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (isMoving)
+        {
+            waitAfterCollision = UnityEngine.Random.Range(minWaitAfterCollision, maxWaitAfterCollision);
+            StopMoving();
+            collided = true;
+            collisionTimer = 0;
+        }
+    }
+
+    public void StartMoving()
+    {
+        isMoving = true;
+    }
+
+    public void StopMoving()
+    {
+        isMoving = false;
+    }
+
+    public void ReverseDirection()
+    {
+        direction = -direction;
     }
 }
