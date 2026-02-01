@@ -1,13 +1,21 @@
 using System.Collections.Generic;
 using Configs;
 using DefaultNamespace;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Localization;
 
 namespace UI
 {
     public class NPCDialogueUI : UIBehaviour
     {
+        [SerializeField] 
+        private LocalizedString _openingLine;
+
+        [SerializeField] 
+        private TextMeshProUGUI _openingText;
+        
         [SerializeField] 
         private RectTransform _buttonParent;
 
@@ -28,6 +36,8 @@ namespace UI
             {
                 return;
             }
+
+            _openingText.text = _openingLine.GetLocalizedString() + npc.Config.Name;
             
             //Clear the existing options
             foreach (var option in _currentOptions)

@@ -13,6 +13,9 @@ public class NPCBehavior : MonoBehaviour
 
     [SerializeField] 
     private SpriteRenderer _renderer;
+
+    [SerializeField] 
+    private NPCMovement _movement;
     
     [SerializeField]
     private NPCDialogueUI _dialogueUI;
@@ -35,6 +38,8 @@ public class NPCBehavior : MonoBehaviour
     public void DisplayDialogueInterface()
     {
         _dialogueUI.Initialize(this);
+        _movement.StopMoving();
+        _movement.enabled = false;
     }
 
     public void CloseDialogueInterface()
@@ -44,6 +49,7 @@ public class NPCBehavior : MonoBehaviour
 
     public void FinishTalkingTo()
     {
+        _movement.enabled = true;
         _hasBeenTalkedTo = true;
     }
 
