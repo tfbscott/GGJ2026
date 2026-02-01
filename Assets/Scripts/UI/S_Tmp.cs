@@ -16,12 +16,13 @@ public class S_Tmp : MonoBehaviour
     [Tooltip("How quickly the bar should move DOWN")]
     public float decrementValue;
     private float currentValue; //the bar's current value
-
+    private GameObject player; //stores the player gameobject
     /*
      * Initialize starting position of the bar
      */
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
         currentValue = 1;
         coloredImage.fillAmount = currentValue / 10;
     }
@@ -34,6 +35,8 @@ public class S_Tmp : MonoBehaviour
     {
         //update currentvalue, making sure it doesn't go out of bounds
         currentValue = Mathf.Clamp(currentValue += (addOrsubtract * incrementValue), 0, 10);
+        //update player's reputation
+        player.GetComponent<S_PlayerStatus>().SetReputation(currentValue);
         //update the bar's image to reflect its current value
         coloredImage.fillAmount = currentValue / 10;
     }
