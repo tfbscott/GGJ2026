@@ -10,6 +10,8 @@ namespace Configs
     {
         [SerializeField] 
         private LocalizedString _npcName;
+        public string Name => _npcName.GetLocalizedString();
+        
         [SerializeField] 
         private DialogueConfig _dialogueConfig;
         public DialogueConfig DialogueConfig => _dialogueConfig;

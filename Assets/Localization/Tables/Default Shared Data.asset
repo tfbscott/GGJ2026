@@ -339,6 +339,14 @@ MonoBehaviour:
     m_Key: TEST_NPC_Choice_C
     m_Metadata:
       m_Items: []
+  - m_Id: 570548258598912
+    m_Key: Player_Rejection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 570949582188544
+    m_Key: Letterhead_Start
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
