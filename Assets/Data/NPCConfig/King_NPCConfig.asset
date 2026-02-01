@@ -22,7 +22,7 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   _dialogueConfig: {fileID: 11400000, guid: 589d85caee2691a4c9af6f1bde84fccb, type: 2}
-  _artConfig: {fileID: 0}
+  _artConfig: {fileID: 11400000, guid: e0a17bf4d5b0e7b41ab9caaa0d665b4c, type: 2}
   _minimumStatus: 10
   _npcColor: {r: 0, g: 0, b: 0, a: 0}
   references:

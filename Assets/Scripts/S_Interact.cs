@@ -46,7 +46,7 @@ public class S_Interact : MonoBehaviour
 
     private void OnInteract(InputAction.CallbackContext obj)
     {
-        if (!canInteract)
+        if (!canInteract || !CheckReputation())
         {
             return;
         }
@@ -86,7 +86,7 @@ public class S_Interact : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         //if player triggers gameobject & has enough reputation
-        if(collision.gameObject.tag == "Player" && CheckReputation() == true)
+        if(collision.gameObject.tag == "Player")
         {
             button.SetActive(true);
             canInteract = true;

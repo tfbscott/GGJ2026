@@ -12,7 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3111b0575938e0949a826612c92fdbe9, type: 3}
   m_Name: Test_NPCConfig
   m_EditorClassIdentifier: Assembly-CSharp::Configs.NPCConfig
+  _npcName:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   _dialogueConfig: {fileID: 11400000, guid: c8e50f9cafe65b546bb088dfa6fda400, type: 2}
   _artConfig: {fileID: 11400000, guid: e0a17bf4d5b0e7b41ab9caaa0d665b4c, type: 2}
-  _requiredStatus: 0
+  _minimumStatus: 0
   _npcColor: {r: 0.8156863, g: 0.1254902, b: 0.5647059, a: 1}
+  references:
+    version: 2
+    RefIds: []

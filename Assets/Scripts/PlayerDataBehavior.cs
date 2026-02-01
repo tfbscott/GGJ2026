@@ -43,11 +43,11 @@ namespace DefaultNamespace
             _suspicion += suspicionDelta;
             if (statusDelta != 0)
             {
-                OnStatusChanged?.Invoke(_status, statusDelta);
+                OnStatusChanged?.Invoke(statusDelta, _status);
             }
             if (suspicionDelta != 0)
             {
-                OnSuspicionChanged?.Invoke(_suspicion, suspicionDelta);
+                OnSuspicionChanged?.Invoke(suspicionDelta, _suspicion);
             }
         }
     }
