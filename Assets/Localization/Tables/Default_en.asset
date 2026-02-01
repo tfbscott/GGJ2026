@@ -369,6 +369,14 @@ MonoBehaviour:
     m_Localized: 'How could you say such an awful thing? '
     m_Metadata:
       m_Items: []
+  - m_Id: 570548258598912
+    m_Localized: We need to increase our reputation in order to talk to them.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 570949582188544
+    m_Localized: 'Dear '
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
