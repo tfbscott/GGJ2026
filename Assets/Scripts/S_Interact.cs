@@ -1,5 +1,8 @@
+using System;
 using Configs;
 using UnityEngine;
+using UnityEngine.InputSystem;
+
 /*
  * Name: Erin Scribner
  * Date: 1/31/2026
@@ -10,7 +13,18 @@ public class S_Interact : MonoBehaviour
 {
     [Tooltip("The interactable object to appear")]
     public GameObject button;
+    public NPCBehavior npcBehavior;
     private GameObject player; //store player gameobject data
+    private PlayerInputActions inputActions;
+
+    private bool canInteract = false;
+
+    private void Awake()
+    {
+        inputActions = new PlayerInputActions();
+        
+        inputActions.Player.Interact.started += OnInteract;
+    }
 
     /*
      * Initialize private variables
@@ -20,6 +34,38 @@ public class S_Interact : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
+    private void OnEnable()
+    {
+        inputActions.Player.Enable();
+    }
+
+    private void OnDisable()
+    {
+        inputActions.Player.Disable();
+    }
+
+    private void OnInteract(InputAction.CallbackContext obj)
+    {
+        if (!canInteract)
+        {
+            return;
+        }
+        
+        npcBehavior.DisplayDialogueInterface();
+        if(player.transform.position.x <= npcBehavior.transform.position.x)
+        {
+            //NPC flips left
+            npcBehavior.transform.rotation = Quaternion.Euler(0, -180, 0);
+        }
+        //if player is to the right of the NPC
+        if(player.transform.position.x > npcBehavior.transform.position.x)
+        {
+            //NPC flips right
+            npcBehavior.transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+    }
+    
+
     /*
      * Checks to see if the player can talk to the NPC
      */
@@ -28,9 +74,9 @@ public class S_Interact : MonoBehaviour
         //player's reputation
         int pR = (int)player.GetComponent<S_PlayerStatus>().GetReputation();
         //NPC's reputation
-        int nR = transform.parent.gameObject.GetComponent<NPCBehavior>().GetRep();
+        int nR = npcBehavior.GetRep();
         //true if player's rep is >= NPC's rep
-        return (pR >= nR);
+        return (pR >= nR) && !npcBehavior.HasBeenTalkedTo;
     }
 
     /*
@@ -43,6 +89,7 @@ public class S_Interact : MonoBehaviour
         if(collision.gameObject.tag == "Player" && CheckReputation() == true)
         {
             button.SetActive(true);
+            canInteract = true;
         }
     }
 
@@ -55,12 +102,7 @@ public class S_Interact : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             button.SetActive(false);
+            canInteract = false;
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

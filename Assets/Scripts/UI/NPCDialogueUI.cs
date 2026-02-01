@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Configs;
 using DefaultNamespace;
 using UnityEngine;
@@ -16,12 +17,31 @@ namespace UI
         [SerializeField]
         private PlayerDataBehavior _playerData;
 
+        private bool _isActive = false;
+
+        private readonly List<DialogueOptionButtonUI> _currentOptions = new List<DialogueOptionButtonUI>();
+
         public void Initialize(DialogueConfig config)
         {
+            //If we are currently active, do nothing
+            if (_isActive)
+            {
+                return;
+            }
+            
+            //Clear the existing options
+            foreach (var option in _currentOptions)
+            {
+                Destroy(option.gameObject);
+            }
+            _currentOptions.Clear();
+            
             gameObject.SetActive(true);
+            _isActive = true;
             foreach (var dialogueChoice in config.DialogueChoices)
             {
                 var button = Instantiate(_buttonPrefab, _buttonParent);
+                _currentOptions.Add(button);
                 button.Initialize(dialogueChoice, _playerData);
                 button.OnSelect += CloseUI;
             }
@@ -30,6 +50,7 @@ namespace UI
         public void CloseUI()
         {
             gameObject.SetActive(false);
+            _isActive = false;
         }
     }
 }

@@ -16,11 +16,13 @@ public class NPCBehavior : MonoBehaviour
     [SerializeField]
     private NPCDialogueUI _dialogueUI;
 
+    private bool _hasBeenTalkedTo = false;
+    public bool HasBeenTalkedTo => _hasBeenTalkedTo;
+
     private void Start()
     {
         _renderer.sprite = _config.GetNPCSprite();
-
-        StartCoroutine(DebugTest());
+        _hasBeenTalkedTo = false;
     }
 
 
@@ -32,6 +34,7 @@ public class NPCBehavior : MonoBehaviour
     public void DisplayDialogueInterface()
     {
         _dialogueUI.Initialize(_config.DialogueConfig);
+        _hasBeenTalkedTo = true;
     }
 
     public void CloseDialogueInterface()
@@ -42,13 +45,5 @@ public class NPCBehavior : MonoBehaviour
     public int GetRep()
     {
         return _config.GetStatus();
-    }
-
-    private IEnumerator DebugTest()
-    {
-        yield return new WaitForSeconds(1.5f);
-       // DisplayGossip();
-       // yield return new WaitForSeconds(1.5f);
-       // DisplayDialogueInterface();
     }
 }

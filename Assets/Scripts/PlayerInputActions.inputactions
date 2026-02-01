@@ -14,20 +14,18 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Interact",
+                    "type": "Button",
+                    "id": "5bb4c88e-5b25-4ccb-bb58-f0e56413f879",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
-                {
-                    "name": "",
-                    "id": "44aeac63-95c6-4efb-8c76-8789a1661e47",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
                 {
                     "name": "2D Vector",
                     "id": "aaffdac8-8e37-4eb6-93be-fd480376dd0c",
@@ -82,6 +80,28 @@
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "c14b3596-b60e-4f77-ab8d-e9d51668a3d7",
+                    "path": "<Pointer>/press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5e46038c-8a33-45fd-9b96-3348f3de94fa",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
