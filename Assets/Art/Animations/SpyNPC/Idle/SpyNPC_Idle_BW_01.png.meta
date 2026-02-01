@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 191287d5b2261c54b9880ba5b1f12c7e
+guid: 26a66ae103effa8499943f3fcb88b02f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2026215986220368372
-    second: SuitMan_NPC_idle_BW_01_0
-  - first:
-      213: -9119355689626384806
-    second: SuitMan_NPC_idle_BW_01_1
+      213: 6790668195736889465
+    second: SpyNPC_Idle_BW_01_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SuitMan_NPC_idle_BW_01_0
+      name: SpyNPC_Idle_BW_01_0
       rect:
         serializedVersion: 2
-        x: 358
-        y: 144
-        width: 300
-        height: 744
+        x: 304
+        y: 97
+        width: 330
+        height: 692
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c0efd1fbb4f61e3e0800000000000000
-      internalID: -2026215986220368372
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SuitMan_NPC_idle_BW_01_1
-      rect:
-        serializedVersion: 2
-        x: 550
-        y: 136
-        width: 11
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a56c163115a817180800000000000000
-      internalID: -9119355689626384806
+      spriteID: 978a07adebc4d3e50800000000000000
+      internalID: 6790668195736889465
       vertices: []
       indices: 
       edges: []
@@ -150,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SuitMan_NPC_idle_BW_01_0: -2026215986220368372
-      SuitMan_NPC_idle_BW_01_1: -9119355689626384806
+      SpyNPC_Idle_BW_01_0: 6790668195736889465
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

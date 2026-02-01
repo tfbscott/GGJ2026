@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 191287d5b2261c54b9880ba5b1f12c7e
+guid: d2c92cf1cf6680744b558b674cd33841
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2026215986220368372
-    second: SuitMan_NPC_idle_BW_01_0
+      213: -4098966634868528306
+    second: ManNPC_Idle_BW_01_0
   - first:
-      213: -9119355689626384806
-    second: SuitMan_NPC_idle_BW_01_1
+      213: 994581143552695524
+    second: ManNPC_Idle_BW_01_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,7 +103,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SuitMan_NPC_idle_BW_01_0
+      name: ManNPC_Idle_BW_01_0
       rect:
         serializedVersion: 2
         x: 358
@@ -118,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c0efd1fbb4f61e3e0800000000000000
-      internalID: -2026215986220368372
+      spriteID: e4bab76109b8d17c0800000000000000
+      internalID: -4098966634868528306
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SuitMan_NPC_idle_BW_01_1
+      name: ManNPC_Idle_BW_01_1
       rect:
         serializedVersion: 2
         x: 550
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a56c163115a817180800000000000000
-      internalID: -9119355689626384806
+      spriteID: 4ec92c1d7467dcd00800000000000000
+      internalID: 994581143552695524
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SuitMan_NPC_idle_BW_01_0: -2026215986220368372
-      SuitMan_NPC_idle_BW_01_1: -9119355689626384806
+      ManNPC_Idle_BW_01_0: -4098966634868528306
+      ManNPC_Idle_BW_01_1: 994581143552695524
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

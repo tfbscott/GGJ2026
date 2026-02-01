@@ -347,18 +347,18 @@ PrefabInstance:
     - target: {fileID: 4555774454333542603, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -6322719542124688963, guid: f05f311988cb5db4eb2b2176d43ccdb8, type: 3}
+      objectReference: {fileID: 21300000, guid: d2c92cf1cf6680744b558b674cd33841, type: 3}
     - target: {fileID: 4555774454333542603, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.7705786
       objectReference: {fileID: 0}
     - target: {fileID: 4555774454333542603, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0.9685534
       objectReference: {fileID: 0}
     - target: {fileID: 4555774454333542603, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
       propertyPath: m_Color.r
-      value: 1
+      value: 0.77708787
       objectReference: {fileID: 0}
     - target: {fileID: 6601565474050380987, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
       propertyPath: m_Controller
@@ -597,7 +597,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: d4c2b784824104a41b93d457e186d67b, type: 2}
     - target: {fileID: 8449564370429881945, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
       propertyPath: m_Name
-      value: Baroness
+      value: Baroness X
       objectReference: {fileID: 0}
     - target: {fileID: 8528345355743398625, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
       propertyPath: _config
@@ -861,7 +861,19 @@ PrefabInstance:
     - target: {fileID: 4555774454333542603, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -6527118936346624815, guid: 4e8b2db9f3077804497a45dd9f6ebf97, type: 3}
+      objectReference: {fileID: 21300000, guid: 191287d5b2261c54b9880ba5b1f12c7e, type: 3}
+    - target: {fileID: 4555774454333542603, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
+      propertyPath: m_Color.b
+      value: 0.7201257
+      objectReference: {fileID: 0}
+    - target: {fileID: 4555774454333542603, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7201257
+      objectReference: {fileID: 0}
+    - target: {fileID: 4555774454333542603, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6601565474050380987, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
       propertyPath: m_Controller
       value: 
@@ -946,7 +958,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 67b95bce5a8f35e45a8b951d8d8d38ac, type: 2}
     - target: {fileID: 8449564370429881945, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
       propertyPath: m_Name
-      value: Baron
+      value: Baron X
       objectReference: {fileID: 0}
     - target: {fileID: 8528345355743398625, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
       propertyPath: _config
@@ -1266,7 +1278,15 @@ PrefabInstance:
     - target: {fileID: 4555774454333542603, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 908670536454471622, guid: 6aefbdf120cae2443bc5ca81626fc37d, type: 3}
+      objectReference: {fileID: 21300000, guid: 4713b339c2835dc4196d5f21fe52c947, type: 3}
+    - target: {fileID: 4555774454333542603, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
+      propertyPath: m_Color.b
+      value: 0.72156864
+      objectReference: {fileID: 0}
+    - target: {fileID: 4555774454333542603, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
+      propertyPath: m_Color.g
+      value: 0.72156864
+      objectReference: {fileID: 0}
     - target: {fileID: 6601565474050380987, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
       propertyPath: m_Controller
       value: 
@@ -1714,7 +1734,19 @@ PrefabInstance:
     - target: {fileID: 4555774454333542603, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -8040469784651425249, guid: 2c8169075c80b0a44986c66cd56d9f10, type: 3}
+      objectReference: {fileID: 21300000, guid: 792c79fd694533842b435213cf39ad8f, type: 3}
+    - target: {fileID: 4555774454333542603, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
+      propertyPath: m_Color.b
+      value: 0.9496855
+      objectReference: {fileID: 0}
+    - target: {fileID: 4555774454333542603, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
+      propertyPath: m_Color.g
+      value: 0.6779201
+      objectReference: {fileID: 0}
+    - target: {fileID: 4555774454333542603, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9267477
+      objectReference: {fileID: 0}
     - target: {fileID: 6601565474050380987, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
       propertyPath: m_Controller
       value: 
@@ -1799,7 +1831,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: cc372fdd6c3f26b4e850be06c871b3ad, type: 2}
     - target: {fileID: 8449564370429881945, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
       propertyPath: m_Name
-      value: Viscountess
+      value: Viscountess X
       objectReference: {fileID: 0}
     - target: {fileID: 8528345355743398625, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
       propertyPath: _config
@@ -2384,7 +2416,19 @@ PrefabInstance:
     - target: {fileID: 4555774454333542603, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -6139080547349920595, guid: 2b6db73d779a0d04090654ea4c212674, type: 3}
+      objectReference: {fileID: 21300000, guid: 191287d5b2261c54b9880ba5b1f12c7e, type: 3}
+    - target: {fileID: 4555774454333542603, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
+      propertyPath: m_Color.b
+      value: 0.6384834
+      objectReference: {fileID: 0}
+    - target: {fileID: 4555774454333542603, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8205652
+      objectReference: {fileID: 0}
+    - target: {fileID: 4555774454333542603, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9622642
+      objectReference: {fileID: 0}
     - target: {fileID: 6601565474050380987, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
       propertyPath: m_Controller
       value: 
@@ -2469,7 +2513,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 3524fbd8dacfb924b962cc932f60fa9b, type: 2}
     - target: {fileID: 8449564370429881945, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
       propertyPath: m_Name
-      value: Viscount
+      value: Viscount X
       objectReference: {fileID: 0}
     - target: {fileID: 8528345355743398625, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
       propertyPath: _config

@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 191287d5b2261c54b9880ba5b1f12c7e
+guid: 1d4e4a4e53f2ed0439e041bf5a7d16e3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2026215986220368372
-    second: SuitMan_NPC_idle_BW_01_0
-  - first:
-      213: -9119355689626384806
-    second: SuitMan_NPC_idle_BW_01_1
+      213: 7313657375645813141
+    second: PurpleGIrl_NPC_Idle_BW_02_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,35 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SuitMan_NPC_idle_BW_01_0
+      name: PurpleGIrl_NPC_Idle_BW_02_0
       rect:
         serializedVersion: 2
-        x: 358
-        y: 144
-        width: 300
-        height: 744
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c0efd1fbb4f61e3e0800000000000000
-      internalID: -2026215986220368372
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SuitMan_NPC_idle_BW_01_1
-      rect:
-        serializedVersion: 2
-        x: 550
+        x: 366
         y: 136
-        width: 11
-        height: 7
+        width: 340
+        height: 706
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a56c163115a817180800000000000000
-      internalID: -9119355689626384806
+      spriteID: 599c84c32a45f7560800000000000000
+      internalID: 7313657375645813141
       vertices: []
       indices: 
       edges: []
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SuitMan_NPC_idle_BW_01_0: -2026215986220368372
-      SuitMan_NPC_idle_BW_01_1: -9119355689626384806
+      PurpleGIrl_NPC_Idle_BW_02_0: 7313657375645813141
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
