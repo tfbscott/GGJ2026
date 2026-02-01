@@ -76,7 +76,17 @@ public class NPCMovement : MonoBehaviour
     {
         if (direction != Vector2.zero) direction = direction.normalized;
         Vector2 targetVel = direction * speed;
-        rb.linearVelocity = new Vector2(targetVel.x, targetVel.y);
+        
+        //flips sprite
+        if(direction.x < 0)
+        {
+            transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else
+        {
+            transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = false;
+        }
+            rb.linearVelocity = new Vector2(targetVel.x, targetVel.y);
     }
 
     private bool IsColliding()
@@ -111,7 +121,6 @@ public class NPCMovement : MonoBehaviour
 
     public void StartMoving()
     {
-        Debug.Log("Moving");
         isMoving = true;
         //changes to walking animation
         anim.SetBool("Move", true);
@@ -119,7 +128,6 @@ public class NPCMovement : MonoBehaviour
 
     public void StopMoving()
     {
-        Debug.Log("Idle");
         isMoving = false;
         //changes to idle animation
         anim.SetBool("Move", false);
