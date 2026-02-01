@@ -101,6 +101,7 @@ namespace UI
             
             gameObject.SetActive(true);
             _isActive = true;
+            
             foreach (var dialogueChoice in npc.Config.DialogueConfig.DialogueChoices)
             {
                 var button = Instantiate(_buttonPrefab, _buttonParent);

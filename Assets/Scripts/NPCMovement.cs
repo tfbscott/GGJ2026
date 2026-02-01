@@ -86,7 +86,7 @@ public class NPCMovement : MonoBehaviour
         {
             transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = false;
         }
-            rb.linearVelocity = new Vector2(targetVel.x, targetVel.y);
+        rb.linearVelocity = new Vector2(targetVel.x, targetVel.y);
     }
 
     private bool IsColliding()
@@ -129,6 +129,7 @@ public class NPCMovement : MonoBehaviour
     public void StopMoving()
     {
         isMoving = false;
+        rb.linearVelocity = Vector2.zero;
         //changes to idle animation
         anim.SetBool("Move", false);
     }

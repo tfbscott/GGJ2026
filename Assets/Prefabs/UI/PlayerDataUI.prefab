@@ -73,9 +73,25 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 847454008401409774, guid: 32c9f602699f0d447a66514332378df3, type: 3}
+      propertyPath: m_fontSize
+      value: 40.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1461260322165644096, guid: 32c9f602699f0d447a66514332378df3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100835032408821733, guid: 32c9f602699f0d447a66514332378df3, type: 3}
+      propertyPath: m_fontSize
+      value: 40.6
+      objectReference: {fileID: 0}
     - target: {fileID: 7501226033193887282, guid: 32c9f602699f0d447a66514332378df3, type: 3}
       propertyPath: m_Name
       value: Suspicion
+      objectReference: {fileID: 0}
+    - target: {fileID: 8248709215200444021, guid: 32c9f602699f0d447a66514332378df3, type: 3}
+      propertyPath: m_fontSize
+      value: 40.6
       objectReference: {fileID: 0}
     - target: {fileID: 8406853358818489137, guid: 32c9f602699f0d447a66514332378df3, type: 3}
       propertyPath: m_Pivot.x
@@ -247,9 +263,37 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.003680706
       objectReference: {fileID: 0}
+    - target: {fileID: 847454008401409774, guid: 32c9f602699f0d447a66514332378df3, type: 3}
+      propertyPath: m_text
+      value: REPUTATION
+      objectReference: {fileID: 0}
+    - target: {fileID: 847454008401409774, guid: 32c9f602699f0d447a66514332378df3, type: 3}
+      propertyPath: m_fontSize
+      value: 40.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2777071766159667327, guid: 32c9f602699f0d447a66514332378df3, type: 3}
+      propertyPath: m_Name
+      value: Backer
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100835032408821733, guid: 32c9f602699f0d447a66514332378df3, type: 3}
+      propertyPath: m_text
+      value: REPUTATION
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100835032408821733, guid: 32c9f602699f0d447a66514332378df3, type: 3}
+      propertyPath: m_fontSize
+      value: 40.6
+      objectReference: {fileID: 0}
     - target: {fileID: 7501226033193887282, guid: 32c9f602699f0d447a66514332378df3, type: 3}
       propertyPath: m_Name
       value: Status
+      objectReference: {fileID: 0}
+    - target: {fileID: 8248709215200444021, guid: 32c9f602699f0d447a66514332378df3, type: 3}
+      propertyPath: m_text
+      value: REPUTATION
+      objectReference: {fileID: 0}
+    - target: {fileID: 8248709215200444021, guid: 32c9f602699f0d447a66514332378df3, type: 3}
+      propertyPath: m_fontSize
+      value: 40.6
       objectReference: {fileID: 0}
     - target: {fileID: 8406853358818489137, guid: 32c9f602699f0d447a66514332378df3, type: 3}
       propertyPath: m_Pivot.x
