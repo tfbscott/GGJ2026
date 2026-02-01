@@ -14,6 +14,7 @@ public class NPCMovement : MonoBehaviour
     private float timeUntilChangeDir = 0;
     private float timer = 0;
 
+    private bool isMoving = true;
     private Rigidbody2D rb;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -27,14 +28,21 @@ public class NPCMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CheckTimeUntilChangeDirValues();
-        ChangeDirection();
+        if (isMoving)
+        {
+            CheckTimeUntilChangeDirValues();
+            ChangeDirection();
+        }
     }
 
     void FixedUpdate()
     {
-        Move(dir.Item1, Axis.X);
-        Move(dir.Item2, Axis.Y);
+        if (isMoving)
+        {
+            Move(dir.Item1, Axis.X);
+            Move(dir.Item2, Axis.Y);
+        }
+        else rb.linearVelocity = Vector2.zero;
     }
 
     void CheckTimeUntilChangeDirValues()
@@ -84,5 +92,15 @@ public class NPCMovement : MonoBehaviour
             rb.linearVelocity = new Vector2(targetVel.x, rb.linearVelocity.y);
         }
         else rb.linearVelocity = new Vector2(rb.linearVelocity.x, targetVel.y);
+    }
+
+    public void StartMoving()
+    {
+        isMoving = true;
+    }
+
+    public void StopMoving()
+    {
+        isMoving = false;
     }
 }
