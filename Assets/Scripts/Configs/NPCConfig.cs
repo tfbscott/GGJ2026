@@ -23,5 +23,10 @@ namespace Configs
         {
             return _artConfig.IdleSprite;
         }
+
+        public int GetStatus()
+        {
+            return _requiredStatus;
+        }
     }
 }
