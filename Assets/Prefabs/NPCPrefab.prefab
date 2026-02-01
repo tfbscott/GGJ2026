@@ -575,6 +575,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPCBehavior
   _config: {fileID: 0}
   _renderer: {fileID: 4555774454333542603}
+  _movement: {fileID: 1875596808150630980}
   _dialogueUI: {fileID: 0}
 --- !u!114 &1875596808150630980
 MonoBehaviour:
@@ -608,7 +609,7 @@ Rigidbody2D:
   m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
