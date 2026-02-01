@@ -1,3 +1,4 @@
+using Configs;
 using UnityEngine;
 /*
  * Name: Erin Scribner
@@ -9,10 +10,27 @@ public class S_Interact : MonoBehaviour
 {
     [Tooltip("The interactable object to appear")]
     public GameObject button;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private GameObject player; //store player gameobject data
+
+    /*
+     * Initialize private variables
+     */
     void Start()
     {
-        
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
+
+    /*
+     * Checks to see if the player can talk to the NPC
+     */
+    bool CheckReputation()
+    { 
+        //player's reputation
+        int pR = (int)player.GetComponent<S_PlayerStatus>().GetReputation();
+        //NPC's reputation
+        int nR = transform.parent.gameObject.GetComponent<NPCBehavior>().GetRep();
+        //true if player's rep is >= NPC's rep
+        return (pR >= nR);
     }
 
     /*
@@ -21,7 +39,8 @@ public class S_Interact : MonoBehaviour
      */
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Player")
+        //if player triggers gameobject & has enough reputation
+        if(collision.gameObject.tag == "Player" && CheckReputation() == true)
         {
             button.SetActive(true);
         }

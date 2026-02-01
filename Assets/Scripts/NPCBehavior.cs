@@ -39,6 +39,11 @@ public class NPCBehavior : MonoBehaviour
         _dialogueUI.CloseUI();
     }
 
+    public int GetRep()
+    {
+        return _config.GetStatus();
+    }
+
     private IEnumerator DebugTest()
     {
         yield return new WaitForSeconds(1.5f);
