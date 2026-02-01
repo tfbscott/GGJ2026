@@ -32,9 +32,9 @@ public class NPCMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (IsColliding()) return;
+        if (IsColliding()) return; // dont do anything if waiting after collision
 
-        if (isMoving)
+        if (isMoving) // update direction if moving
         {
             CheckTimeUntilChangeDirValues();
             ChangeDirection();
@@ -50,7 +50,7 @@ public class NPCMovement : MonoBehaviour
         else rb.linearVelocity = Vector2.zero;
     }
 
-    void CheckTimeUntilChangeDirValues()
+    void CheckTimeUntilChangeDirValues() // make sure time values make sense
     {
         if (maxTimeUntilChangeDir < minTimeUntilChangeDir)
             maxTimeUntilChangeDir = minTimeUntilChangeDir;
@@ -59,7 +59,7 @@ public class NPCMovement : MonoBehaviour
         if (maxTimeUntilChangeDir < 0) maxTimeUntilChangeDir = 1;
     }
 
-    void ChangeDirection()
+    void ChangeDirection() // switches direction if timer is up
     {
         if (timer >= timeUntilChangeDir)
         {
@@ -79,9 +79,9 @@ public class NPCMovement : MonoBehaviour
 
     private bool IsColliding()
     {
-        if (collided == true)
+        if (collided == true) // if collide happened
         {
-            if (collisionTimer >= waitAfterCollision)
+            if (collisionTimer >= waitAfterCollision) // if collision wait is over, continue moving in opposite direction
             {
                 collided = false;
                 timeUntilChangeDir = UnityEngine.Random.Range(minTimeUntilChangeDir, maxTimeUntilChangeDir);
@@ -98,7 +98,7 @@ public class NPCMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (isMoving)
+        if (isMoving) // freeze if collided while moving
         {
             waitAfterCollision = UnityEngine.Random.Range(minWaitAfterCollision, maxWaitAfterCollision);
             StopMoving();
