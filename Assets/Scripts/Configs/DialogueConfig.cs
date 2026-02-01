@@ -15,6 +15,7 @@ namespace Configs
         public struct DialogueChoice
         {
             public LocalizedString Dialogue;
+            public LocalizedString Response;
             public int StatusChange;
             public int SuspicionChange;
         }

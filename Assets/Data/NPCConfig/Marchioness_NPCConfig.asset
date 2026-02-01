@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3111b0575938e0949a826612c92fdbe9, type: 3}
-  m_Name: Baron_NPCConfig
+  m_Name: Marchioness_NPCConfig
   m_EditorClassIdentifier: Assembly-CSharp::Configs.NPCConfig
   _npcName:
     m_TableReference:
       m_TableCollectionName: GUID:90706b4d0b249ec409a58bbdc86fcf53
     m_TableEntryReference:
-      m_KeyId: 422966202986496
+      m_KeyId: 422966207180812
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  _dialogueConfig: {fileID: 11400000, guid: ce3e08a3cec91da4a8e593eb73c5aff2, type: 2}
+  _dialogueConfig: {fileID: 11400000, guid: 546e0d71c159d52449e374818521b743, type: 2}
   _artConfig: {fileID: 0}
-  _requiredStatus: 0
+  _minimumStatus: 6
   _npcColor: {r: 0, g: 0, b: 0, a: 0}
   references:
     version: 2

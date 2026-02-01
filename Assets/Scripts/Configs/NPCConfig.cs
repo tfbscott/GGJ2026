@@ -1,11 +1,15 @@
 using Configs;
 using UnityEngine;
+using UnityEngine.Localization;
+using UnityEngine.Serialization;
 
 namespace Configs
 {
     [CreateAssetMenu(fileName = "NPCConfig", menuName = "Configs/NPCConfig")]
     public class NPCConfig : ScriptableObject
     {
+        [SerializeField] 
+        private LocalizedString _npcName;
         [SerializeField] 
         private DialogueConfig _dialogueConfig;
         public DialogueConfig DialogueConfig => _dialogueConfig;
@@ -14,7 +18,7 @@ namespace Configs
         private ArtConfig _artConfig;
 
         [SerializeField] 
-        private int _requiredStatus;
+        private int _minimumStatus;
 
         [SerializeField] 
         private Color _npcColor;
@@ -26,7 +30,7 @@ namespace Configs
 
         public int GetStatus()
         {
-            return _requiredStatus;
+            return _minimumStatus;
         }
     }
 }
