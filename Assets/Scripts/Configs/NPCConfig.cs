@@ -17,18 +17,10 @@ namespace Configs
         public DialogueConfig DialogueConfig => _dialogueConfig;
 
         [SerializeField] 
-        private ArtConfig _artConfig;
-
-        [SerializeField] 
         private int _minimumStatus;
 
         [SerializeField] 
         private Color _npcColor;
-
-        public Sprite GetNPCSprite()
-        {
-            return _artConfig.IdleSprite;
-        }
 
         public int GetStatus()
         {

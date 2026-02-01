@@ -25,7 +25,6 @@ public class NPCBehavior : MonoBehaviour
 
     private void Start()
     {
-        _renderer.sprite = _config.GetNPCSprite();
         _hasBeenTalkedTo = false;
     }
 

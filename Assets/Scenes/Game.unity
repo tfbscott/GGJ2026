@@ -783,7 +783,7 @@ PrefabInstance:
     - target: {fileID: 4555774454333542603, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -4661934691873241911, guid: 7c33f96fe20d5674ab08c08f5aad8c58, type: 3}
+      objectReference: {fileID: -1197838073254903005, guid: 0b0451b38a34b6240ad4e280328df961, type: 3}
     - target: {fileID: 6601565474050380987, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
       propertyPath: m_Controller
       value: 
@@ -1901,11 +1901,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7595643150607341453, guid: 76d66a507c63df647b1b1ac71c6c9307, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7595643150607341453, guid: 76d66a507c63df647b1b1ac71c6c9307, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.8
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7595643150607341453, guid: 76d66a507c63df647b1b1ac71c6c9307, type: 3}
       propertyPath: m_AnchorMin.x
