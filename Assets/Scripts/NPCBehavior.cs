@@ -47,10 +47,10 @@ public class NPCBehavior : MonoBehaviour
         _dialogueUI.CloseUI();
     }
 
-    public void FinishTalkingTo()
+    public void FinishTalkingTo(bool success)
     {
         _movement.enabled = true;
-        _hasBeenTalkedTo = true;
+        _hasBeenTalkedTo = success;
     }
 
     public int GetRep()

@@ -52,6 +52,7 @@ public class S_Interact : MonoBehaviour
             return;
         }
         
+        button.SetActive(false);
         npcBehavior.DisplayDialogueInterface();
         if(player.transform.position.x <= npcBehavior.transform.position.x)
         {
