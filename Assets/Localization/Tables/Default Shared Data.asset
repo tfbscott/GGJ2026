@@ -15,6 +15,314 @@ MonoBehaviour:
   m_TableCollectionName: Default
   m_TableCollectionNameGuidString: 90706b4d0b249ec409a58bbdc86fcf53
   m_Entries:
+  - m_Id: 422966202986496
+    m_Key: Baron_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966202986497
+    m_Key: Barron_Choice_Pos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966202986498
+    m_Key: Barron_Response_Pos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966202986499
+    m_Key: Barron_Choice_Neu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966202986500
+    m_Key: Barron_Response_Neu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966202986501
+    m_Key: Barron_Choice_Neg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966202986502
+    m_Key: Barron_Response_Neg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966202986503
+    m_Key: Baroness_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966202986504
+    m_Key: Baroness_Choice_Pos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966202986505
+    m_Key: Baroness_Response_Pos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966202986506
+    m_Key: Baroness_Choice_Neu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966202986507
+    m_Key: Baroness_Response_Neu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966202986508
+    m_Key: Baroness_Choice_Neg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966202986509
+    m_Key: Baroness_Response_Neg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966202986510
+    m_Key: Viscount_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966202986511
+    m_Key: Viscount_Choice_Pos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966202986512
+    m_Key: Viscount_Response_Pos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966202986513
+    m_Key: Viscount_Choice_Neu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966202986514
+    m_Key: Viscount_Response_Neu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966202986515
+    m_Key: Viscount_Choice_Neg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966202986516
+    m_Key: Viscount_Response_Neg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966202986517
+    m_Key: Viscountess_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966202986518
+    m_Key: Viscountess_Choice_Pos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966202986519
+    m_Key: Viscountess_Response_Pos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966202986520
+    m_Key: Viscountess_Choice_Neu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966202986521
+    m_Key: Viscountess_Response_Neu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966202986522
+    m_Key: Viscountess_Choice_Neg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966202986523
+    m_Key: Viscountess_Response_Neg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966202986524
+    m_Key: Earl_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966202986525
+    m_Key: Earl_Choice_Pos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966202986526
+    m_Key: Earl_Response_Pos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966202986527
+    m_Key: Earl_Choice_Neu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966202986528
+    m_Key: Earl_Response_Neu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966202986529
+    m_Key: Earl_Choice_Neg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966202986530
+    m_Key: Earl_Response_Neg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966202986531
+    m_Key: Countess_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966202986532
+    m_Key: Countess_Choice_Pos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180800
+    m_Key: Countess_Response_Pos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180801
+    m_Key: Countess_Choice_Neu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180802
+    m_Key: Countess_Response_Neu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180803
+    m_Key: Countess_Choice_Neg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180804
+    m_Key: Countess_Response_Neg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180805
+    m_Key: Marquess_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180806
+    m_Key: Marquess_Choice_Pos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180807
+    m_Key: Marquess_Response_Pos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180808
+    m_Key: Marquess_Choice_Neu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180809
+    m_Key: Marquess_Response_Neu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180810
+    m_Key: Marquess_Choice_Neg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180811
+    m_Key: Marquess_Response_Neg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180812
+    m_Key: Marchioness_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180813
+    m_Key: Marchioness_Choice_Pos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180814
+    m_Key: Marchioness_Response_Pos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180815
+    m_Key: Marchioness_Choice_Neu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180816
+    m_Key: Marchioness_Response_Neu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180817
+    m_Key: Marchioness_Choice_Neg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180818
+    m_Key: Marchioness_Response_Neg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180819
+    m_Key: Duke_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180820
+    m_Key: Duke_Choice_Pos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180821
+    m_Key: Duke_Response_Pos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180822
+    m_Key: Duke_Choice_Neu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180823
+    m_Key: Duke_Response_Neu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180824
+    m_Key: Duke_Choice_Neg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180825
+    m_Key: Duke_Response_Neg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180826
+    m_Key: Duchess_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180827
+    m_Key: Duchess_Choice_Pos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180828
+    m_Key: Duchess_Response_Pos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180829
+    m_Key: Duchess_Choice_Neu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180830
+    m_Key: Duchess_Response_Neu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180831
+    m_Key: Duchess_Choice_Neg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180832
+    m_Key: Duchess_Response_Neg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180833
+    m_Key: King_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180834
+    m_Key: King_Choice_Pos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180835
+    m_Key: King_Response_Pos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180836
+    m_Key: King_Choice_Neu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180837
+    m_Key: King_Response_Neu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180838
+    m_Key: King_Choice_Neg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 422966207180839
+    m_Key: King_Response_Neg
+    m_Metadata:
+      m_Items: []
   - m_Id: 81592315904
     m_Key: TEST_Gossip_A
     m_Metadata:
