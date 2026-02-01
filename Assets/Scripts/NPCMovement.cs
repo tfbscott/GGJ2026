@@ -5,7 +5,7 @@ public class NPCMovement : MonoBehaviour
 {
 
     private Rigidbody2D rb;
-
+    private Animator anim;
     public float speed = 2f;
     public float minTimeUntilChangeDir = 2.0f;
     public float maxTimeUntilChangeDir = 5.0f;
@@ -28,6 +28,7 @@ public class NPCMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         timeUntilChangeDir = UnityEngine.Random.Range(minTimeUntilChangeDir, maxTimeUntilChangeDir);
         direction = UnityEngine.Random.insideUnitCircle;
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -110,12 +111,18 @@ public class NPCMovement : MonoBehaviour
 
     public void StartMoving()
     {
+        Debug.Log("Moving");
         isMoving = true;
+        //changes to walking animation
+        anim.SetBool("Move", true);
     }
 
     public void StopMoving()
     {
+        Debug.Log("Idle");
         isMoving = false;
+        //changes to idle animation
+        anim.SetBool("Move", false);
     }
 
     public void ReverseDirection()

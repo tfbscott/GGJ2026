@@ -246,6 +246,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4555774454333542603, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6322719542124688963, guid: f05f311988cb5db4eb2b2176d43ccdb8, type: 3}
+    - target: {fileID: 4555774454333542603, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4555774454333542603, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4555774454333542603, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6601565474050380987, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: f3481db572535a4448131835c3a656fd, type: 2}
     - target: {fileID: 8449564370429881945, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
       propertyPath: m_Name
       value: Earl
@@ -469,6 +489,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4555774454333542603, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6560336453799144347, guid: 74d9a395bb6c19245a18da969f47cfda, type: 3}
+    - target: {fileID: 6601565474050380987, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d4c2b784824104a41b93d457e186d67b, type: 2}
     - target: {fileID: 8449564370429881945, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
       propertyPath: m_Name
       value: Baroness
@@ -576,6 +604,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4555774454333542603, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 908670536454471622, guid: 6aefbdf120cae2443bc5ca81626fc37d, type: 3}
+    - target: {fileID: 6601565474050380987, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 306e108b165d0b5488a4ed89a8354a7a, type: 2}
     - target: {fileID: 8449564370429881945, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
       propertyPath: m_Name
       value: Marchioness
@@ -646,6 +682,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4555774454333542603, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4661934691873241911, guid: 7c33f96fe20d5674ab08c08f5aad8c58, type: 3}
+    - target: {fileID: 6601565474050380987, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 8fe7ecaceb437e74bbfd9f0490b70890, type: 2}
     - target: {fileID: 8449564370429881945, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
       propertyPath: m_Name
       value: King
@@ -716,6 +760,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4555774454333542603, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6527118936346624815, guid: 4e8b2db9f3077804497a45dd9f6ebf97, type: 3}
+    - target: {fileID: 6601565474050380987, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 73ff9c3ad9dde484288a1b812ce24654, type: 2}
     - target: {fileID: 8449564370429881945, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
       propertyPath: m_Name
       value: Duke
@@ -786,6 +838,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4555774454333542603, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6322719542124688963, guid: f05f311988cb5db4eb2b2176d43ccdb8, type: 3}
+    - target: {fileID: 6601565474050380987, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 67b95bce5a8f35e45a8b951d8d8d38ac, type: 2}
     - target: {fileID: 8449564370429881945, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
       propertyPath: m_Name
       value: Baron
@@ -1105,6 +1165,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4555774454333542603, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 908670536454471622, guid: 6aefbdf120cae2443bc5ca81626fc37d, type: 3}
+    - target: {fileID: 6601565474050380987, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 427238ea4bee92d498bdd499c957daa3, type: 2}
     - target: {fileID: 8449564370429881945, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
       propertyPath: m_Name
       value: Duchess
@@ -1282,7 +1350,7 @@ Animator:
   m_GameObject: {fileID: 1132355685}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ea62f3f1a165b50dcb7e64b38680f67b, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0ee9f743ea84e934fb022ccf34719262, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1540,6 +1608,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4555774454333542603, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8040469784651425249, guid: 2c8169075c80b0a44986c66cd56d9f10, type: 3}
+    - target: {fileID: 6601565474050380987, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a0d19a97a6bf306498bbe308c50dcc1b, type: 2}
     - target: {fileID: 8449564370429881945, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
       propertyPath: m_Name
       value: Countess
@@ -1610,6 +1686,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4555774454333542603, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8040469784651425249, guid: 2c8169075c80b0a44986c66cd56d9f10, type: 3}
+    - target: {fileID: 6601565474050380987, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: cc372fdd6c3f26b4e850be06c871b3ad, type: 2}
     - target: {fileID: 8449564370429881945, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
       propertyPath: m_Name
       value: Viscountess
@@ -2118,6 +2202,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4555774454333542603, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6139080547349920595, guid: 2b6db73d779a0d04090654ea4c212674, type: 3}
+    - target: {fileID: 6601565474050380987, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 91717da807d084b4eb0ae349433fcab7, type: 2}
     - target: {fileID: 8449564370429881945, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
       propertyPath: m_Name
       value: Marquess
@@ -2188,6 +2280,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4555774454333542603, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6139080547349920595, guid: 2b6db73d779a0d04090654ea4c212674, type: 3}
+    - target: {fileID: 6601565474050380987, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3524fbd8dacfb924b962cc932f60fa9b, type: 2}
     - target: {fileID: 8449564370429881945, guid: d95ebbdb5a4326d488c376cb9140f89f, type: 3}
       propertyPath: m_Name
       value: Viscount
