@@ -12,7 +12,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac7857a1c40d4395ba737042cb0ebdac, type: 3}
   m_Name: Baroness_DialogConfig
   m_EditorClassIdentifier: Assembly-CSharp::Configs.DialogueConfig
-  _gossipDialogues: []
+  _gossipDialogues:
+  - m_TableReference:
+      m_TableCollectionName: GUID:90706b4d0b249ec409a58bbdc86fcf53
+    m_TableEntryReference:
+      m_KeyId: 669094899085312
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:90706b4d0b249ec409a58bbdc86fcf53
+    m_TableEntryReference:
+      m_KeyId: 669094995554304
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:90706b4d0b249ec409a58bbdc86fcf53
+    m_TableEntryReference:
+      m_KeyId: 669094995554305
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   _dialogueChoices:
   - Dialogue:
       m_TableReference:

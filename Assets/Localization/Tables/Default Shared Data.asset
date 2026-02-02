@@ -15,6 +15,30 @@ MonoBehaviour:
   m_TableCollectionName: Default
   m_TableCollectionNameGuidString: 90706b4d0b249ec409a58bbdc86fcf53
   m_Entries:
+  - m_Id: 669094899085312
+    m_Key: gossip_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 669094995554304
+    m_Key: gossip_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 669094995554305
+    m_Key: gossip_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 669094995554306
+    m_Key: gossip_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 669094995554307
+    m_Key: gossip_5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 669094995554308
+    m_Key: gossip_6
+    m_Metadata:
+      m_Items: []
   - m_Id: 422966202986496
     m_Key: Baron_Name
     m_Metadata:

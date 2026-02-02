@@ -1,3 +1,6 @@
+using System.Collections;
+using System.Collections.Generic;
+using DefaultNamespace;
 using UnityEngine;
 /*
  * Name: Erin Scribner
@@ -6,25 +9,14 @@ using UnityEngine;
  */
 public class S_PlayerStatus : MonoBehaviour
 {
-    private float currentReputation; //the player's current reputation value
-    private float currentSuspicion; //the player's current suspicion value
+    [SerializeField]
+    private PlayerDataBehavior _playerData;
 
-   /*
-    * Initialize private variables
-    */
-    void Start()
-    {
-        currentReputation = 1;
-        currentSuspicion = 1;
-    }
+    [SerializeField] 
+    private GameObject _rejectionBubble;
 
-    /*
-     * Update currentRep with the given value
-     */
-    public void SetReputation(float value)
-    {
-        currentReputation = value;
-    }
+    private float currentReputation => _playerData.Status; //the player's current reputation value
+    private float currentSuspicion => _playerData.Suspicion; //the player's current suspicion value
 
     /*
      * Return the current reputation value
@@ -34,14 +26,18 @@ public class S_PlayerStatus : MonoBehaviour
         return currentReputation;
     }
 
-    /*
-    * Update currentSus with the given value
-    */
-    public void SetSuspicion(float value)
+    public void DisplayRejection()
     {
-        currentSuspicion = value;
+        _rejectionBubble.SetActive(true);
+        StartCoroutine(RejectionCoroutine());
     }
 
+        
+    private IEnumerator RejectionCoroutine()
+    {
+        yield return new WaitForSeconds(5.0f);
+        _rejectionBubble.SetActive(false);
+    }
     /*
      * Return the current suspicion value
      */

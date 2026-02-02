@@ -15,7 +15,7 @@ public class S_Interact : MonoBehaviour
     public GameObject button;
     public NPCBehavior npcBehavior;
     public Transform npcSprite;
-    private GameObject player; //store player gameobject data
+    private S_PlayerStatus player; //store player gameobject data
     private PlayerInputActions inputActions;
 
     private bool canInteract = false;
@@ -32,7 +32,7 @@ public class S_Interact : MonoBehaviour
      */
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<S_PlayerStatus>();
     }
 
     private void OnEnable()
@@ -47,8 +47,14 @@ public class S_Interact : MonoBehaviour
 
     private void OnInteract(InputAction.CallbackContext obj)
     {
-        if (!canInteract || !CheckReputation())
+        if (!canInteract)
         {
+            return;
+        }
+
+        if (!CheckReputation())
+        {
+            player.DisplayRejection();
             return;
         }
         
@@ -74,7 +80,7 @@ public class S_Interact : MonoBehaviour
     bool CheckReputation()
     { 
         //player's reputation
-        int pR = (int)player.GetComponent<S_PlayerStatus>().GetReputation();
+        int pR = (int)player.GetReputation();
         //NPC's reputation
         int nR = npcBehavior.GetRep();
         //true if player's rep is >= NPC's rep

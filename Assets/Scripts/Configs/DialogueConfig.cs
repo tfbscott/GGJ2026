@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.Localization;
 
@@ -11,6 +12,7 @@ namespace Configs
     {
         [SerializeField] 
         private List<LocalizedString> _gossipDialogues;
+        public List<LocalizedString> GossipDialogues => _gossipDialogues;
         
         [Serializable]
         public struct DialogueChoice

@@ -91,37 +91,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1 &114500746789073508
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3679452006415600021}
-  m_Layer: 0
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3679452006415600021
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 114500746789073508}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3367746857229211316}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2098007818683833241
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,38 +272,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 3848678533272938780}
   m_maskType: 0
---- !u!1 &2146247834639093586
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3367746857229211316}
-  m_Layer: 0
-  m_Name: Gossip
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3367746857229211316
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2146247834639093586}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 3679452006415600021}
-  m_Father: {fileID: 2184589636837462976}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5013246884439640133
 GameObject:
   m_ObjectHideFlags: 0
@@ -577,6 +514,10 @@ MonoBehaviour:
   _renderer: {fileID: 4555774454333542603}
   _movement: {fileID: 1875596808150630980}
   _dialogueUI: {fileID: 0}
+  _gossipBubble: {fileID: 2146247834639093586}
+  _gossipText: {fileID: 7737597185241792697}
+  _gossipDelaySecondsMin: 5
+  _gossipDelaySecondsMax: 25
 --- !u!114 &1875596808150630980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -679,3 +620,81 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1001 &5148408964438045371
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2184589636837462976}
+    m_Modifications:
+    - target: {fileID: 6538051986399002089, guid: 4e71dc22d55105b448e8934fe2f7cd88, type: 3}
+      propertyPath: m_Name
+      value: Gossip
+      objectReference: {fileID: 0}
+    - target: {fileID: 7624155741381846031, guid: 4e71dc22d55105b448e8934fe2f7cd88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7624155741381846031, guid: 4e71dc22d55105b448e8934fe2f7cd88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7624155741381846031, guid: 4e71dc22d55105b448e8934fe2f7cd88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7624155741381846031, guid: 4e71dc22d55105b448e8934fe2f7cd88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7624155741381846031, guid: 4e71dc22d55105b448e8934fe2f7cd88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7624155741381846031, guid: 4e71dc22d55105b448e8934fe2f7cd88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7624155741381846031, guid: 4e71dc22d55105b448e8934fe2f7cd88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7624155741381846031, guid: 4e71dc22d55105b448e8934fe2f7cd88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7624155741381846031, guid: 4e71dc22d55105b448e8934fe2f7cd88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7624155741381846031, guid: 4e71dc22d55105b448e8934fe2f7cd88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4e71dc22d55105b448e8934fe2f7cd88, type: 3}
+--- !u!1 &2146247834639093586 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6538051986399002089, guid: 4e71dc22d55105b448e8934fe2f7cd88, type: 3}
+  m_PrefabInstance: {fileID: 5148408964438045371}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3367746857229211316 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7624155741381846031, guid: 4e71dc22d55105b448e8934fe2f7cd88, type: 3}
+  m_PrefabInstance: {fileID: 5148408964438045371}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7737597185241792697 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3176063616048853506, guid: 4e71dc22d55105b448e8934fe2f7cd88, type: 3}
+  m_PrefabInstance: {fileID: 5148408964438045371}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshPro
